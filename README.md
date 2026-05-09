@@ -1,5 +1,5 @@
 // this architecture is getting complex
-
+```
 main()
 │
 ├── shared_ptr<ISubject>
@@ -23,8 +23,8 @@ main()
 │
 └── Broker internally stores:
          weak_ptr<IObserver>
-
-
+```
+```
 Publisher.publish(Event)
         |
         v
@@ -35,7 +35,7 @@ Find Topic Subscribers
         |
         v
 Observer.update(Event)
-
+``` 
 Pros: 
 
 1. Loose coupling - everythign goes through broker , none other know eachother
